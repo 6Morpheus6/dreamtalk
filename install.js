@@ -2,7 +2,7 @@ module.exports = async (kernel) => {
   let cmd = "uv pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cpu"
   if (kernel.platform === 'darwin') {
     if (kernel.arch === "arm64") {
-      cmd = "uv pip install torch torchaudio torchvision"
+      cmd = "uv pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cpu"
     } else {
       cmd = "uv pip install torch==2.1.2 torchaudio==2.1.2"
     }
