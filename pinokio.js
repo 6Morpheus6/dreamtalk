@@ -1,6 +1,9 @@
 const path = require('path')
 module.exports = {
   version: "3.7",
+  title: "dreamtalk",
+  description: "When Expressive Talking Head Generation Meets Diffusion Probabilistic Models (https://github.com/ali-vilab/dreamtalk)",
+  icon: "icon.gif",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
     let running = {
